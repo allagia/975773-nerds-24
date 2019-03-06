@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алла  Панова](https://up.htmlacademy.ru/htmlcss/24/user/975773).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил  Поданевъ] (https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
