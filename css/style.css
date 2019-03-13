@@ -33,6 +33,7 @@ a {
 }
 
 .main-container {
+  position: relative;
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -576,7 +577,7 @@ a {
 .address {
   position: absolute;
   left:140px;
-  top: 134px;
+  bottom: 62px;
   width: 319px;
   background-color: #ffffff;
   padding: 51px 68px 47px 50px;
@@ -690,7 +691,8 @@ a {
   position: absolute;
   z-index: 1;
   top: -12%;
-  left: 18%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 960px;
   line-height: 18px;
   box-sizing: border-box;
@@ -701,7 +703,7 @@ a {
 
 .write-us-form::after {
   position: absolute;
-  z-index: 2;
+  z-index: 100;
   top: 78px;
   right: 90px;
   content: ""
