@@ -16,7 +16,7 @@
         <ul class="site-navigation">
           <li><a class="site-navigation-item" href="studio.html">Студия</a></li>
           <li><a class="site-navigation-item" href="clients.html">Клиенты</a></li>
-          <li><a class="site-navigation-item" href="shop.html">Магазин</a></li>
+          <li><a class="site-navigation-item site-navigation-current" href="shop.html">Магазин</a></li>
           <li><a class="site-navigation-item" href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -48,15 +48,15 @@
             <legend>Сетка:</legend>
             <ul class="network-list">
               <li class="network-list-item">
-                <input class="visually-hidden radio-button" type="radio" name="adaptive" id="adaptive-id" value="" checked>
+                <input class="visually-hidden radio-button" type="radio" name="network" id="adaptive-id" value="" checked>
                 <label for=adaptive-id>Адаптивная</label>
               </li>
               <li class="network-list-item">
-                <input class="visually-hidden radio-button" type="radio" name="fixed" id="fixed-id" value="">
+                <input class="visually-hidden radio-button" type="radio" name="network" id="fixed-id" value="">
                 <label for=fixed-id>Фиксированная</label>
               </li>
               <li class="network-list-item">
-                <input class="visually-hidden radio-button" type="radio" name="rubber" id="rubber-id" value="">
+                <input class="visually-hidden radio-button" type="radio" name="network" id="rubber-id" value="">
                 <label for=rubber-id>Резиновая</label>
               </li>
             </ul>
@@ -108,7 +108,7 @@
               <li class="photo">
                 <img src="./img/img-sedona-jpg.png" width="360" height="576" alt="макет Седоны">
                 <div class="photo-info info-1">
-                  <h3>Sedona</h3>
+                  <a href="">Sedona</a>
                   <p>Информационный сайт
                       для туристов</p>
                   <button class="photo-price" type="button">9 900 руб.</button>
@@ -117,7 +117,7 @@
               <li class="photo">
                 <img src="./img/img-pink-jpg.png" width="360" height="576" alt="макет Пинк">
                 <div class="photo-info info-2">
-                  <h3>Pink App</h3>
+                  <a href="">Pink App</a>
                   <p>Продуктовый лендинг
                       приложения для iOS и Android</p>
                   <button class="photo-price" type="button">9 900 руб.</button>
@@ -126,7 +126,7 @@
               <li class="photo">
                 <img src="./img/img-barbershop-jpg.png" width="360" height="576" alt="макет барбершоп Бородински">
                 <div class="photo-info info-3">
-                  <h3>Barbershop</h3>
+                  <a href="">Barbershop</a>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
                   <button class="photo-price" type="button">9 900 руб.</button>
                 </div>
@@ -134,7 +134,7 @@
               <li class="photo">
                 <img src="./img/img-mishka-jpg.png" width="360" height="576" alt="макет Мишка">
                 <div class="photo-info info-4">
-                  <h3>MISHKA</h3>
+                  <a href="">MISHKA</a>
                   <p>Интернет-магазин
                       вязаных игрушек</p>
                   <button class="photo-price" type="button">9 900 руб.</button>
@@ -143,7 +143,7 @@
               <li class="photo">
                 <img src="./img/img-aplus-jpg.png" width="360" height="576" alt="макет А плюс">
                 <div class="photo-info info-5">
-                  <h3>A Plus</h3>
+                  <a href="">A Plus</a>
                   <p>Лендинг курсов повышения квалификации</p>
                   <button class="photo-price" type="button">9 900 руб.</button>
                 </div>
@@ -151,7 +151,7 @@
               <li class="photo">
                 <img src="./img/img-kvast-jpg.png" width="360" height="576" alt="макет Кваст">
                 <div class="photo-info info-6">
-                  <h3>КВАСТ</h3>
+                  <a href="">КВАСТ</a>
                   <p>Промо-сайт производителя
                       крафтового кваса</p>
                   <button class="photo-price" type="button">9 900 руб.</button>
@@ -171,7 +171,7 @@
       </div>
       <section class="map">
         <h2 class="visually-hidden">Наше расположение</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552341875978" width="100%" height="416" style="border:0" allowfullscreen></iframe>
+        <iframe class="map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552341875978" width="1440" height="416" style="border:0" allowfullscreen></iframe>
         <div class="main-container">
           <div class="address">
             <b>NЁRDS DESIGN STUDIO</b>
@@ -180,11 +180,11 @@
             <button class="button-form" type="button">Напишите нам</button>
           </div>
         </div>
-        <form class="write-us-form" name="write-us" method="POST" action="https://echo.htmlacademy.ru">
+        <form class="write-us-form form-show" name="write-us" method="POST" action="https://echo.htmlacademy.ru">
           <p class="form-title">Напишите нам</p>
           <p class="first-row">
             <label>Ваше имя:
-            <input type="text" name="name" id="name-id" value="" placeholder="Имя Фамилия">
+            <input type="text" name="your-name" id="name-id" value="" placeholder="Имя Фамилия">
             </label>
             <label>Ваш e-mail:
               <input type="text" name="email" id="email-id" value="" placeholder="email@example.com" pattern="[A-Za-z]{1,}@[A-Za-z]{1,}[.][A-Za-z]{1,}">
@@ -196,6 +196,7 @@
             </label>
           </p>
           <button class="form-button" type="submit" name="send">ОТПРАВИТЬ</button>
+          <button class="form-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </form>
       </section>
     </main>
@@ -210,5 +211,6 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
