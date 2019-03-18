@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -19,9 +19,7 @@
           <li><a class="site-navigation-item site-navigation-current" href="shop.html">Магазин</a></li>
           <li><a class="site-navigation-item" href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li><a class="user-navigation-item" href="basket.html">Корзина</a></li>
-        </ul>
+        <a class="user-navigation-item" href="basket.html">Корзина</a>
       </nav>
     </header>
     <main class="inner-page">
@@ -35,8 +33,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min"><span class="visually-hidden">Маркер минимальной цены</span></div>
+                <div class="toggle toggle-max"><span class="visually-hidden">Маркер максимальной цены</span></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input name="min-price" type="text" value="0"></label>

@@ -20,6 +20,7 @@ popup.classList.remove("form-show");
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
+  popup.classList.remove("form-error");
   popup.classList.add("form-show");
   yourName.focus();
   if (storageName) {

@@ -1,16 +1,19 @@
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
+  min-width: 1440px;
   margin: 0;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   color: #283136;
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -56,8 +59,7 @@ a {
           box-sizing: border-box
 }
 
-.site-navigation,
-.user-navigation {
+.site-navigation {
   list-style: none;
   margin: 0;
   display: -webkit-box;
@@ -78,10 +80,6 @@ a {
           box-sizing: border-box;
 }
 
-.user-navigation {
-  max-width: 109px;
-}
-
 .site-navigation-item,
 .user-navigation-item {
   color: #000000;
@@ -93,22 +91,17 @@ a {
   padding: 0 22px 0 24px;
 }
 
-.user-navigation li {
-  padding: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .user-navigation-item {
   position: relative;
+  max-width: 76px;
   padding-left: 30px;
+  padding: 22px 0px 22px 29px;
 }
 
 .user-navigation-item::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 31px;
   left: -10px;
   width:15px;
   height: 15px;
@@ -223,6 +216,7 @@ a {
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -612,6 +606,7 @@ a {
 .map {
   position: relative;
   width: 100%;
+  height: 416px;
   padding-top: 80px;
   background: url(../img/map.jpg) no-repeat 50% 80px;
 }
@@ -667,7 +662,7 @@ a {
   width: 1440px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 62px 140px;
+  padding: 69px 140px;
 }
 
 .social-footer {
@@ -749,7 +744,7 @@ a {
   line-height: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 65px 100px 84px 100px;
+  padding: 63px 100px 84px 100px;
   -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
           box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   background-color: #ffffff;
@@ -1041,7 +1036,7 @@ a {
 
 .photo-price {
   width: 200px;
-  padding: 17px 61px;
+  padding: 17px 60px;
   margin-top: 11px;
   color: #ffffff;
   border-radius: 3px;
@@ -1051,6 +1046,7 @@ a {
   background-color: #fb565a;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  text-transform: uppercase;
 }
 
 .photo-price:hover {
@@ -1261,6 +1257,7 @@ a {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
 
   font-size: 16px;
@@ -1360,7 +1357,7 @@ a {
 }
 
 .network {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
 #slider-id + label::before,
@@ -1503,6 +1500,10 @@ a {
 
 .form-show {
   display: block;
+  -webkit-animation-name: appearance;
+          animation-name: appearance;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .form-error {
@@ -1510,6 +1511,52 @@ a {
           animation-name: shake;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+}
+
+@-webkit-keyframes appearance {
+  0% {
+    -webkit-transform: translate(-50%, -295px);
+            transform: translate(-50%, -295px);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+
+}
+
+@keyframes appearance {
+  0% {
+    -webkit-transform: translate(-50%, -295px);
+            transform: translate(-50%, -295px);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+
 }
 
 @-webkit-keyframes shake {
